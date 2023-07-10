@@ -122,24 +122,9 @@
       }
     ]
   ],
-  "npmPublish": false, 
-  "nugetServer": "https://api.nuget.org/v3/index.json", 
-  "projectPath": "src/SemanticExample/SemanticExample.csproj", 
+  "npmPublish": false,
+  "nugetServer": "https://api.nuget.org/v3/index.json",
+  "projectPath": "src/SemanticExample/SemanticExample.csproj",
   "includeSymbols": true,
-  "files": [
-    {
-      "path": ["Directory.Build.props"], 
-      "type": "xml",
-      "replacements": [
-        {
-          "key": "VersionPrefix",
-          "value": "${nextRelease.version}"
-        },
-        {
-          "key": "RepositoryCommit",
-          "value": "${CI_COMMIT_SHA}"
-        }
-      ]
-    }
-  ]
+  "usePackageVersion": true
 }
