@@ -35,6 +35,9 @@ jobs:
     - name: Install dependencies
       run: npm install
       working-directory: ./
+    - name: Print GITHUB_SHA
+      run: echo $GITHUB_SHA
+
     - name: Release
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -137,7 +137,7 @@
         },
         {
           "key": "RepositoryCommit",
-          "value": "${CI_COMMIT_SHA}"
+          "value": "${GITHUB_SHA}"
         }
       ]
     }
