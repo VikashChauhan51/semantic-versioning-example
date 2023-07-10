@@ -15,6 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.0.x
+        
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: src
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+      working-directory: src
     - name: List directory contents
       run: ls -al
     - name: Setup Nodejs
@@ -27,5 +38,6 @@ jobs:
     - name: Release
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       NUGET_TOKEN: ${{ secrets.NUGET_APIKEY }}
       run: npx semantic-release
       working-directory: ./
