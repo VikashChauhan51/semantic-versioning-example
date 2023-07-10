@@ -43,5 +43,7 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
     - name: Install dependencies
       run: npm install
+      working-directory: ./
     - name: Release
       run: npx semantic-release
+      working-directory: ./
