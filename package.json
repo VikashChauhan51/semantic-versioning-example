@@ -1,6 +1,6 @@
 {
   "name": "semantic-versioning-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Vikash Chauhan",
   "repository": "https://github.com/VikashChauhan51/semantic-versioning-example.git",
   "devDependencies": {
@@ -12,7 +12,7 @@
     "@semantic-release/github": "*",
     "@semantic-release/exec": "*",
     "@droidsolutions-oss/semantic-release-nuget": "*",
-    "@droidsolutions-oss/semantic-release-update-file":"*",
+    "@droidsolutions-oss/semantic-release-update-file": "*",
     "husky": "*",
     "node-env-run": "*",
     "semantic-release": "*",
