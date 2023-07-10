@@ -102,7 +102,7 @@
         "assets": [
           "package.json",
           "CHANGELOG.md",
-          "Directory.Build.props"
+          "src/SemanticExample/SemanticExample.csproj"
         ],
         "message": "chore(release):${nextRelease.version} [skip ci]\n\n ${nextRelease.notes}"
       }
@@ -128,7 +128,7 @@
   "includeSymbols": true,
   "files": [
     {
-      "path": ["Directory.Build.props"], 
+      "path": ["src/SemanticExample/SemanticExample.csproj"], 
       "type": "xml",
       "replacements": [
         {
